@@ -1,0 +1,53 @@
+name: food
+description: A new Flutter project.
+
+
+publish_to: 'none' 
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  anim_search_bar: ^2.0.1
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/images/
+    - assets/fonts/
+
+  fonts:
+    - family: Ternego
+      fonts:
+        - asset: assets/fonts/Black.otf
+          weight: 900
+        - asset: assets/fonts/Heavy.otf
+          weight: 800
+        - asset: assets/fonts/Bold.otf
+          weight: 700
+        - asset: assets/fonts/SemiBold.otf
+          weight: 600
+        - asset: assets/fonts/Medium.otf
+          weight: 500
+        - asset: assets/fonts/Regular.otf
+          weight: 400
+        - asset: assets/fonts/Light.otf
+          weight: 300
+        - asset: assets/fonts/Thin.otf
+          weight: 200
+        - asset: assets/fonts/UltraLight.otf
+          weight: 100
+  
+
