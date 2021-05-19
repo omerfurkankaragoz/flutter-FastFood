@@ -1,7 +1,7 @@
 import 'package:anim_search_bar/anim_search_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:food/Constants/images.dart';
 import 'package:food/constants/colors.dart';
-import 'package:food/constants/images.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -38,8 +38,11 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ],
                     ),
+                    SizedBox(
+                      height: 20,
+                    ),
                     Container(
-                      height: 120,
+                      height: 60,
                       child: AnimSearchBar(
                         width: maxWidth,
                         autoFocus: true,
@@ -48,103 +51,106 @@ class _HomePageState extends State<HomePage> {
                         textController: null,
                       ),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        GestureDetector(
-                          onTap: () {
-                            print("object");
-                          },
-                          child: Container(
-                            height: 80.0,
-                            width: 80.0,
-                            child: Image(
-                              image: Images.burger,
-                            ),
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.grey.withOpacity(0.3),
-                                  spreadRadius: 5,
-                                  blurRadius: 1,
-                                  offset: Offset(
-                                      0, 3), // changes position of shadow
+                    Expanded(
+                      child: ListView(
+                        children: [
+                          Container(
+                            height: 80,
+                            child: ListView(
+                              scrollDirection: Axis.horizontal,
+                              children: [
+                                GestureDetector(
+                                  child: Container(
+                                    height: 80.0,
+                                    width: 80.0,
+                                    child: Image(
+                                      image: Images.burger,
+                                    ),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Colors.grey.withOpacity(0.3),
+                                          spreadRadius: 5,
+                                          blurRadius: 1,
+                                          offset: Offset(0,
+                                              3), // changes position of shadow
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 40,
+                                ),
+                                Container(
+                                  height: 80.0,
+                                  width: 80.0,
+                                  child: Image(
+                                    image: Images.pizza,
+                                  ),
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(0.3),
+                                        spreadRadius: 5,
+                                        blurRadius: 1,
+                                        offset: Offset(
+                                            0, 3), // changes position of shadow
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 40,
+                                ),
+                                Container(
+                                  height: 80.0,
+                                  width: 80.0,
+                                  child: Image(
+                                    image: Images.harvest,
+                                  ),
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(0.3),
+                                        spreadRadius: 5,
+                                        blurRadius: 1,
+                                        offset: Offset(
+                                            0, 3), // changes position of shadow
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 40,
+                                ),
+                                Container(
+                                  height: 80.0,
+                                  width: 80.0,
+                                  child: Image(
+                                    image: Images.cake,
+                                  ),
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(0.3),
+                                        spreadRadius: 5,
+                                        blurRadius: 1,
+                                        offset: Offset(
+                                            0, 3), // changes position of shadow
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ],
                             ),
                           ),
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Container(
-                          height: 80.0,
-                          width: 80.0,
-                          child: Image(
-                            image: Images.pizza,
-                          ),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.grey.withOpacity(0.3),
-                                spreadRadius: 5,
-                                blurRadius: 1,
-                                offset:
-                                    Offset(0, 3), // changes position of shadow
-                              ),
-                            ],
-                          ),
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Container(
-                          height: 80.0,
-                          width: 80.0,
-                          child: Image(
-                            image: Images.harvest,
-                          ),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.grey.withOpacity(0.3),
-                                spreadRadius: 5,
-                                blurRadius: 1,
-                                offset:
-                                    Offset(0, 3), // changes position of shadow
-                              ),
-                            ],
-                          ),
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Container(
-                          height: 80.0,
-                          width: 80.0,
-                          child: Image(
-                            image: Images.cake,
-                          ),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.grey.withOpacity(0.3),
-                                spreadRadius: 5,
-                                blurRadius: 1,
-                                offset:
-                                    Offset(0, 3), // changes position of shadow
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                    SizedBox(
-                      height: 50,
+                        ],
+                      ),
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -280,6 +286,9 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                       ],
+                    ),
+                    SizedBox(
+                      height: 70,
                     ),
                   ],
                 ),
